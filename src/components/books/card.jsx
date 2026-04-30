@@ -9,6 +9,7 @@ const Card = () => {
       {featureBook.map(book => (
         <div key={book.id}>
           <h1>{book.title}</h1>
+          <h2>{book.category}</h2>
         </div>
       ))}
     </div>
