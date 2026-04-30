@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Card from "@/components/books/card";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div >
-     <h1 className="font-bold text-3xl"></h1>
+    <div>
+      <Card />
     </div>
   );
-}
+};
+
+export default Home;
