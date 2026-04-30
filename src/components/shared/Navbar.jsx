@@ -4,10 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const NavBar = () => {
-
-
     return (
-        <div className="navbar bg-base-100 shadow-sm ">
+        <div className="flex justify-between items-center bg-base-100 shadow-sm ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -16,19 +14,19 @@ const NavBar = () => {
                     <ul
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <Link href={'/'}><li>Home</li></Link>
-                        <Link href={'/AllBooks'}><li>All Books</li></Link>
-                        <Link href={'/MyProfile'}><li>My Profile</li></Link>
+                        <Link href={'/'}><li className='text-sm font-bold'>Home</li></Link>
+                        <Link href={'/AllBooks'}><li className='text-sm font-bold'>All Books</li></Link>
+                        <Link href={'/MyProfile'}><li className='text-sm font-bold'>My Profile</li></Link>
 
                     </ul>
                 </div>
-              <Link href={'/'}>  <Image  src={logo} alt='logo' width={60} height={10}></Image></Link>
+                <Link href={'/'}>  <Image src={logo} alt='logo' width={60} height={10}></Image></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-3">
-                    <Link href={'/'}><li>Home</li></Link>
-                    <Link href={'/AllBooks'}><li>All Books</li></Link>
-                    <Link href={'/MyProfile'}><li>My Profile</li></Link>
+                    <Link href={'/'}><li className='text-sm font-bold text-gray-600'>Home</li></Link>
+                    <Link href={'/AllBooks'}><li className='text-sm font-bold text-gray-600'>All Books</li></Link>
+                    <Link href={'/MyProfile'}><li className='text-sm font-bold text-gray-600'>My Profile</li></Link>
                 </ul>
             </div>
             <div className="navbar-end">

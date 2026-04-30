@@ -19,15 +19,11 @@ const Card = () => {
                         <h2 className="card-title m-0 text-2xl">{book.title}</h2>
                         <h2 className="card-title m-0">{book.author}</h2>
                         <div className="card-actions">
-                            <button className="btn btn-primary">More Details</button>
+                            <button className="btn btn-primary">View Details</button>
                         </div>
                     </div>
                 </div>
             ))}
-
-            <div className='text-center justify-items-center'>
-                <Link href={'/AllBooks'}> <button className='btn btn-dash'>More Books</button></Link>
-            </div>
 
         </div>
     );
