@@ -1,22 +1,18 @@
 import React from 'react';
+import books from "../../../public/books.json";
 
-
-// "title": "Cosmos",
-// "author": "Carl Sagan",
-// "category": "Science",
-// "available_quantity": 5,
-// "image_url": "https://ibb.co.com/XZShqxMr"
-
-const Card = async () => {
-    // const res = await fetch('/api/books')
-    // const books = await res.json();
-    // const featureBook = books.slice(0, 4);
-    return (
-        <div>
-
-
+const Card = () => {
+  const featureBook = books.slice(0, 4);
+  
+  return (
+    <div>
+      {featureBook.map(book => (
+        <div key={book.id}>
+          <h1>{book.title}</h1>
         </div>
-    );
+      ))}
+    </div>
+  );
 };
 
 export default Card;
