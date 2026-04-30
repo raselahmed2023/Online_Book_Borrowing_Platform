@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import PodCast from "@/components/shared/PodCast";
 
 
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.className} min-h-full flex flex-col`}>
         <NavBar></NavBar>
         {children}
+        <PodCast></PodCast>
         <Footer></Footer>
         </body>
     </html>
