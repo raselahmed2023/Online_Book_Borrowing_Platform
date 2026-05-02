@@ -17,7 +17,7 @@ const LoginPage = () => {
         const { data, error } = await authClient.signIn.email({
             email,
             password,
-            callbackURL:"/"
+            callbackURL: "/"
         })
 
 
@@ -27,6 +27,13 @@ const LoginPage = () => {
             router.push('/')
         }
     };
+
+    const handleGoogleSignIn = async () => {
+         await authClient.signIn.social({
+            provider: "google",
+        });
+    };
+
     return (
         <div className="min-h-screen bg-base-200 flex items-center justify-center">
             <div className="card bg-base-100 w-full max-w-lg shadow-lg rounded-2xl">
@@ -85,7 +92,7 @@ const LoginPage = () => {
                         <div className="text-center text-base-content/60 my-1">Or</div>
 
 
-                        <button type="button" className="btn btn-outline w-full rounded-full border-base-300 font-medium gap-2">
+                        <button onClick={handleGoogleSignIn} type="button" className="btn btn-outline w-full rounded-full border-base-300 font-medium gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="h-5 w-5">
                                 <path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.7c-.6 3-2.3 5.5-4.8 7.2v6h7.7c4.5-4.2 7.1-10.3 7.1-17.2z" />
                                 <path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.7-6c-2.1 1.4-4.9 2.3-8.2 2.3-6.3 0-11.6-4.2-13.5-9.9H2.6v6.2C6.5 42.7 14.7 48 24 48z" />
