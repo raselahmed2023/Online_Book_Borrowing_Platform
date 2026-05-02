@@ -5,12 +5,14 @@ import { mongodbAdapter } from "better-auth/adapters/mongodb";
 const client = new MongoClient(process.env.MONGODB_URL);
 const db = client.db();
 
+
+const baseURL = process.env.BETTER_AUTH_URL || 
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+
 export const auth = betterAuth({
-  secret: process.env.BETTER_AUTH_SECRET,  
-  baseURL: process.env.BETTER_AUTH_URL,    
-  database: mongodbAdapter(db, {
-    client
-  }),
+  secret: process.env.BETTER_AUTH_SECRET,
+  baseURL: baseURL,
+  database: mongodbAdapter(db, { client }),
   emailAndPassword: {
     enabled: true,
   }
