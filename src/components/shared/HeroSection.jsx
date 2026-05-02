@@ -15,7 +15,7 @@ const HeroSection = () => {
                 priority
             />
 
-            <div className="hero-overlay bg-black/50 absolute inset-0"></div>
+            <div className="hero-overlay bg-black/10 absolute inset-0"></div>
 
             <div className="hero-content text-neutral-content text-center relative z-10">
                 <div className="w-full">

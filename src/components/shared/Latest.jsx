@@ -17,7 +17,7 @@ const books=[
 
 const LatestBookUpdate = () => {
     return (
-           <div className='rounded flex justify-between gap-4 mt-5 items-center bg-gray-300 container mx-auto py-2 '>
+           <div className='rounded flex justify-between gap-4 mt-5 items-center bg-gray-100 container mx-auto py-2 '>
 
             <Marquee pauseOnHover speed={60} gradient={false}>
                 {books.map(book => (
