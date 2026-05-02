@@ -1,19 +1,13 @@
 import { betterAuth } from "better-auth";
-import { MongoClient } from "mongodb";
-import { mongodbAdapter } from "better-auth/adapters/mongodb";
-
-const client = new MongoClient(process.env.MONGODB_URL);
-const db = client.db();
-
-
-const baseURL = process.env.BETTER_AUTH_URL || 
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
 
 export const auth = betterAuth({
-  secret: process.env.BETTER_AUTH_SECRET,
-  baseURL: baseURL,
-  database: mongodbAdapter(db, { client }),
+  secret: "test-secret-32-characters-long!!",
+  baseURL: "https://online-book-borrowing-platform-r0ygfmz6s.vercel.app",
+  database: {
+    provider: "mongodb",
+    url: process.env.MONGODB_URL || "mongodb://localhost:27017/test",
+  },
   emailAndPassword: {
     enabled: true,
-  }
+  },
 });
