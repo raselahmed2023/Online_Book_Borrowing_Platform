@@ -5,7 +5,11 @@ import { mongodbAdapter } from "better-auth/adapters/mongodb";
 const client = new MongoClient(process.env.MONGODB_URL);
 const db = client.db();
 
-const baseURL = (process.env.BETTER_AUTH_URL || "http://localhost:3000").trim();
+const baseURL = (
+  process.env.BETTER_AUTH_URL ||
+  process.env.NEXT_PUBLIC_BETTER_AUTH_URL ||
+  "http://localhost:3000"
+).trim();
 
 export const auth = betterAuth({
   secret: process.env.BETTER_AUTH_SECRET || "test-secret-32-characters-long!!",
@@ -25,6 +29,6 @@ export const auth = betterAuth({
   trustedOrigins: [
     "http://localhost:3000",
     "https://online-book-borrowing-platform-r0ygfmz6s.vercel.app",
-    "https://online-book-borrowing-platform-mocha.vercel.app", 
+    "https://online-book-borrowing-platform-mocha.vercel.app",
   ],
 });
