@@ -4,13 +4,11 @@ import NavBar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import PodCast from "@/components/shared/PodCast";
 
-
-
-const poppins =Poppins({
+const poppins = Poppins({
   variable: "--font-poppins",
-   subsets: ['latin'],
-  weight: ['400','500','600','700']
-})
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700']
+});
 
 export const metadata = {
   title: "Book Borrowing",
@@ -19,16 +17,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={` h-full antialiased`}
-    >
+    <html lang="en" className="h-full antialiased">
       <body className={`${poppins.className} min-h-full flex flex-col`}>
-        <NavBar></NavBar>
+        <NavBar />
         {children}
-        <PodCast></PodCast>
-        <Footer></Footer>
-        </body>
+        <PodCast />
+        <Footer />
+      </body>
     </html>
   );
 }

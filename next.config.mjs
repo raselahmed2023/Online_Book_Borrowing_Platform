@@ -2,9 +2,16 @@ const nextConfig = {
   serverExternalPackages: ["mongodb", "better-auth"],
   images: {
     remotePatterns: [
-      { protocol: 'https', hostname: 'api.dicebear.com' },
-      { protocol: 'https', hostname: 'i.ibb.co' },
+      {
+        protocol: 'https',
+        hostname: '**', 
+      },
+      {
+        protocol: 'http',
+        hostname: '**', 
+      },
     ],
   },
 };
+
 export default nextConfig;
