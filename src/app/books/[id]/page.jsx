@@ -23,7 +23,7 @@ export default async function BookDetails({ params }) {
       <div className="card bg-base-100 shadow-sm border border-base-200">
         <div className="flex flex-col md:flex-row">
 
-          {/* Cover */}
+       
           <div className="flex flex-col items-center gap-4 p-8 bg-base-200 md:w-56 shrink-0">
             <div className="relative w-36 h-52 rounded-lg overflow-hidden shadow">
               <Image

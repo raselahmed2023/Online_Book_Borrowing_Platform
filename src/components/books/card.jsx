@@ -1,11 +1,25 @@
+"use client"
 import React from 'react';
 import books from "../../../public/books.json";
 import Image from 'next/image';
-import Link from 'next/link';
+import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
+
 
 
 const Card = () => {
+    const { data: session } = authClient.useSession();
+    const user = session?.user;
+    const router = useRouter();
     const featureBook = books.slice(0, 4);
+
+    const handleViewDetails = (id) => {
+        if (!user) {
+            router.push("/Signin");
+        } else {
+            router.push(`/books/${id}`);
+        }
+    };
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto mt-10">
             {featureBook.map(book => (
@@ -18,9 +32,12 @@ const Card = () => {
                         <div className="badge badge-dash badge-primary absolute top-4 right-4">{book.category}</div>
                         <h2 className="card-title m-0 text-2xl">{book.title}</h2>
                         <h2 className="card-title m-0">{book.author}</h2>
-                        <Link href={`/books/${book.id}`}>
-                            <button className="btn btn-primary btn-sm">View Details</button>
-                        </Link>
+                        <button
+                            onClick={() => handleViewDetails(book.id)}
+                            className="btn btn-primary btn-sm"
+                        >
+                            View Details
+                        </button>
                     </div>
                 </div>
             ))}
