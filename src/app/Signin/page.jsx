@@ -25,9 +25,6 @@ const LoginPage = () => {
             provider: "google",
             callbackURL: "/"
         });
-        setTimeout(() => {
-            window.location.href = "https://online-book-borrowing-platform-mocha.vercel.app/";
-        }, 1000);
     };
 
     return (
