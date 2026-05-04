@@ -17,9 +17,9 @@ const page = () => {
                         <div className="badge badge-dash badge-primary absolute top-4 right-4">{book.category}</div>
                         <h2 className="card-title m-0 text-2xl">{book.title}</h2>
                         <h2 className="card-title m-0">{book.author}</h2>
-                        <div className="card-actions">
-                            <button className="btn btn-primary">View Details</button>
-                        </div>
+                         <Link href={`/books/${book.id}`}>
+                            <button className="btn btn-primary btn-sm">View Details</button>
+                        </Link>
                     </div>
                 </div>
             ))}
