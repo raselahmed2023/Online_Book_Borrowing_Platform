@@ -13,5 +13,5 @@ export function proxy(request) {
 }
 
 export const config = {
-  matcher: ["/MyProfile", "/MyProfile/update"],
+  matcher: ["/MyProfile", "/MyProfile/update",  "/books/:path*"],
 };
