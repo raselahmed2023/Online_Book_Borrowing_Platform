@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export function middleware(request) {
+export function proxy(request) {
   const session = request.cookies.get("better-auth.session_token");
   if (!session) {
     return NextResponse.redirect(new URL("/Signin", request.url));
@@ -9,5 +9,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/MyProfile"],
+  matcher: ["/MyProfile", "/MyProfile/update"],
 };

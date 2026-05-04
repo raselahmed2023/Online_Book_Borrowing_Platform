@@ -4,6 +4,9 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
+
 const MyProfileDetails = () => {
     const { data: session, isPending } = authClient.useSession();
     const user = session?.user;
