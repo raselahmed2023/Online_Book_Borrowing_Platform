@@ -1,7 +1,14 @@
-"use client";
+import dynamic from "next/dynamic";
 
-import MyProfileDetails from "@/components/shared/MyProfile";
+const MyProfile = dynamic(() => import("@/components/shared/MyProfile"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex justify-center items-center min-h-screen">
+      <span className="loading loading-spinner loading-lg"></span>
+    </div>
+  ),
+});
 
 export default function MyProfilePage() {
-  return <MyProfileDetails />;
+  return <MyProfile />;
 }

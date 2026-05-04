@@ -1,11 +1,11 @@
 "use client"
-export const dynamic = "force-dynamic";
+
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-const MyProfileDetails = () => {
+const MyProfile = () => {
     const { data: session, isPending } = authClient.useSession();
     const user = session?.user;
     const router = useRouter();
@@ -82,4 +82,4 @@ const MyProfileDetails = () => {
     );
 };
 
-export default MyProfileDetails;
+export default MyProfile;
