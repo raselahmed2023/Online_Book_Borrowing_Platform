@@ -38,7 +38,7 @@ export default async function BookDetails({ params }) {
               className="btn btn-primary btn-sm w-full"
               disabled={qty === 0}
             >
-              Request to Borrow
+             Borrow This Book
             </button>
           </div>
 
