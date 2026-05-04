@@ -1,11 +1,9 @@
 "use client"
+export const dynamic = "force-dynamic";
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-
-export const dynamic = "force-dynamic";
-
 
 const MyProfileDetails = () => {
     const { data: session, isPending } = authClient.useSession();
@@ -74,6 +72,7 @@ const MyProfileDetails = () => {
                                     <span className="text-xs uppercase tracking-widest text-base-content/40">Email</span>
                                     <span className="font-medium text-lg">{user.email}</span>
                                 </div>
+
                             </div>
                         </div>
                     </div>
