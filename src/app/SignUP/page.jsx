@@ -31,7 +31,7 @@ const SignUpPage = () => {
     setLoading(false);
 
     if (error) {
-      setError(error.message || "Something went wrong!"); // ⭐ error দেখাবে
+      setError(error.message || "Something went wrong!");
     } else {
       router.push('/Signin');
     }
