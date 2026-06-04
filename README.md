@@ -79,8 +79,8 @@ A modern web application where users can discover, explore, and borrow books acr
 ### Clone Repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
-cd online-book-borrowing-platform
+git clone https://github.com/raselahmed2023/Online_Book_Borrowing_Platform.git
+cd Online_Book_Borrowing_Platform
 ```
 
 ### Install Dependencies
