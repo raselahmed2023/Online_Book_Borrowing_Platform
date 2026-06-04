@@ -1,19 +1,145 @@
-📚 Online Book Borrowing Platform
-A modern web app where you can discover, explore, and borrow books — all in one place.
+# 📚 Online Book Borrowing Platform
 
-What's Inside
+A modern web application where users can discover, explore, and borrow books across multiple categories. The platform provides secure authentication, personalized book management, and a seamless reading experience on all devices.
 
- Browse Books — Explore a curated collection across Story, Tech, and Science categories
-Book Details — View full description, availability, and related books
-Authentication — Sign in with Google or Email
-My Profile — Track your borrowed books and account info
-Fully Responsive — Works great on mobile and desktop
+## 🌐 Live Demo
 
-🛠️ Built With
+🔗 Live Site: https://online-book-borrowing-platform-mocha.vercel.app/
 
-Next.js — App router, server components
-Better Auth — Google OAuth + Email authentication
-MongoDB — Database
-Tailwind CSS + DaisyUI — UI styling
+🔗 Client Repository: YOUR_GITHUB_REPO_LINK
 
-🌐 Live : https://online-book-borrowing-platform-mocha.vercel.app/
+---
+
+## 🚀 Key Features
+
+### 📖 Browse Books
+
+* Explore books across Story, Tech, and Science categories
+* Search and discover available books
+* Responsive book catalog interface
+
+### 📚 Book Details
+
+* View detailed book information
+* Check availability status
+* Discover related books
+
+### 🔐 Authentication
+
+* Google OAuth authentication
+* Email & Password authentication
+* Secure user sessions with Better Auth
+
+### 👤 User Dashboard
+
+* Track borrowed books
+* Manage user profile
+* View borrowing history
+
+### 📱 Responsive Design
+
+* Optimized for desktop, tablet, and mobile devices
+* Clean and modern user interface
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* Next.js
+* React.js
+* Tailwind CSS
+* DaisyUI
+
+### Authentication
+
+* Better Auth
+* Google OAuth
+
+### Database
+
+* MongoDB
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+<img width="800" height="400" alt="book-platform" src="https://github.com/user-attachments/assets/1d80cd20-5abc-4235-89d1-d7f00d17521b" />
+
+### Book Details
+
+<img width="800" height="400" alt="Screenshot 2026-06-04 094300" src="https://github.com/user-attachments/assets/b08a2b4c-39f5-487a-a83e-585cd3535fc6" />
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### Clone Repository
+
+```bash
+git clone YOUR_REPOSITORY_URL
+cd online-book-borrowing-platform
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file and add:
+
+```env
+MONGODB_URI=your_mongodb_uri
+BETTER_AUTH_SECRET=your_secret
+BETTER_AUTH_URL=your_url
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+```
+
+### Run Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+## 🧪 Testing Notes
+
+* User registration and login
+* Google OAuth authentication
+* Book browsing functionality
+* Book details page
+* Dashboard features
+* Responsive design testing
+
+---
+
+## 🔮 Future Improvements
+
+* Book reservation system
+* Wishlist functionality
+* Book reviews and ratings
+* Reading progress tracker
+* Advanced filtering and search
+* Email notifications
+
+---
+
+## 👨‍💻 Author
+
+**Rasel Ahmed**
+
+Portfolio: https://portfolio-lac-iota-96.vercel.app/
+
+LinkedIn: https://www.linkedin.com/in/rasel-ahmed06/
+
+GitHub: https://github.com/raselahmed2023
+<img width="1876" height="900" alt="book-platform" src="https://github.com/user-attachments/assets/997a3e2c-c878-4d30-88cf-a63e5c9ebdf0" />
