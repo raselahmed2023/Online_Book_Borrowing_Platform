@@ -1,49 +1,47 @@
-# 📚 Online Book Borrowing Platform
+# Online Book Borrowing Platform
 
 A modern web application where users can discover, explore, and borrow books across multiple categories. The platform provides secure authentication, personalized book management, and a seamless reading experience on all devices.
 
-## 🌐 Live Demo
+##  Live Demo
 
 🔗 Live Site: https://online-book-borrowing-platform-mocha.vercel.app/
 
-🔗 Client Repository: YOUR_GITHUB_REPO_LINK
-
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-### 📖 Browse Books
+###  Browse Books
 
 * Explore books across Story, Tech, and Science categories
 * Search and discover available books
 * Responsive book catalog interface
 
-### 📚 Book Details
+###  Book Details
 
 * View detailed book information
 * Check availability status
 * Discover related books
 
-### 🔐 Authentication
+###  Authentication
 
 * Google OAuth authentication
 * Email & Password authentication
 * Secure user sessions with Better Auth
 
-### 👤 User Dashboard
+###  User Dashboard
 
 * Track borrowed books
 * Manage user profile
 * View borrowing history
 
-### 📱 Responsive Design
+###  Responsive Design
 
 * Optimized for desktop, tablet, and mobile devices
 * Clean and modern user interface
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 
@@ -76,7 +74,7 @@ A modern web application where users can discover, explore, and borrow books acr
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### Clone Repository
 
@@ -111,7 +109,7 @@ npm run dev
 
 ---
 
-## 🧪 Testing Notes
+##  Testing Notes
 
 * User registration and login
 * Google OAuth authentication
@@ -122,7 +120,7 @@ npm run dev
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 * Book reservation system
 * Wishlist functionality
@@ -133,13 +131,10 @@ npm run dev
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Rasel Ahmed**
 
 Portfolio: https://portfolio-lac-iota-96.vercel.app/
-
 LinkedIn: https://www.linkedin.com/in/rasel-ahmed06/
-
 GitHub: https://github.com/raselahmed2023
-<img width="1876" height="900" alt="book-platform" src="https://github.com/user-attachments/assets/997a3e2c-c878-4d30-88cf-a63e5c9ebdf0" />
