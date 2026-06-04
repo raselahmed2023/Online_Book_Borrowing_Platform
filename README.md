@@ -129,13 +129,3 @@ npm run dev
 * Advanced filtering and search
 * Email notifications
 
----
-
-##  Author
-
-**Rasel Ahmed**
-
-Portfolio: https://portfolio-lac-iota-96.vercel.app/
-
-LinkedIn: https://www.linkedin.com/in/rasel-ahmed06/
-
